@@ -3,39 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
-    "Angular": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-=======
     "app1": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
->>>>>>> Clock
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-<<<<<<< HEAD
-            "outputPath": "dist/Angular",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": false,
-=======
             "outputPath": "dist/app1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
->>>>>>> Clock
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -43,12 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-<<<<<<< HEAD
-            "scripts": []
-=======
             "scripts": [],
             "es5BrowserSupport": true
->>>>>>> Clock
           },
           "configurations": {
             "production": {
@@ -72,14 +50,6 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
-<<<<<<< HEAD
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-=======
->>>>>>> Clock
                 }
               ]
             }
@@ -88,30 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-<<<<<<< HEAD
-            "browserTarget": "Angular:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "Angular:build:production"
-=======
             "browserTarget": "app1:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "app1:build:production"
->>>>>>> Clock
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-<<<<<<< HEAD
-            "browserTarget": "Angular:build"
-=======
             "browserTarget": "app1:build"
->>>>>>> Clock
           }
         },
         "test": {
@@ -119,18 +77,6 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-<<<<<<< HEAD
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-=======
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
@@ -141,29 +87,19 @@
               "src/favicon.ico",
               "src/assets"
             ]
->>>>>>> Clock
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-<<<<<<< HEAD
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-=======
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
->>>>>>> Clock
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-<<<<<<< HEAD
-        },
-=======
         }
       }
     },
@@ -172,24 +108,10 @@
       "projectType": "application",
       "prefix": "",
       "architect": {
->>>>>>> Clock
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-<<<<<<< HEAD
-            "devServerTarget": "Angular:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "Angular:serve:production"
-            }
-          }
-        }
-      }
-    }},
-  "defaultProject": "Angular"
-=======
             "devServerTarget": "app1:serve"
           },
           "configurations": {
@@ -211,5 +133,4 @@
     }
   },
   "defaultProject": "app1"
->>>>>>> Clock
 }
