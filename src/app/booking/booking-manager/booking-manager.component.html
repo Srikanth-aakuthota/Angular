@@ -1,0 +1,31 @@
+<table class="table table-bordered">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Onward Journey</th>
+      <th>Return Journey</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let booking of bookings;let bi = index">
+      <td>
+        <input type="text" class="form-control" [(ngModel)]="booking.name" />
+      </td>
+      <td>
+        <date-picker [(date)]="booking.onward"></date-picker>
+      </td>
+      <td>
+        <date-picker [date]="booking.return" (dateChange)="booking.return = $event"></date-picker>
+      </td>
+      <td>
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+
+<button class="btn btn-success" (click)="addNewBooking()">Add New Booking</button>

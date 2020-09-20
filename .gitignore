@@ -11,8 +11,13 @@
 /node_modules
 
 # profiling files
+<<<<<<< HEAD
 chrome-profiler-events*.json
 speed-measure-plugin*.json
+=======
+chrome-profiler-events.json
+speed-measure-plugin.json
+>>>>>>> Clock
 
 # IDEs and editors
 /.idea

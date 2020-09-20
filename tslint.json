@@ -1,9 +1,16 @@
 {
   "extends": "tslint:recommended",
+<<<<<<< HEAD
+=======
+  "rulesDirectory": [
+    "codelyzer"
+  ],
+>>>>>>> Clock
   "rules": {
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
+<<<<<<< HEAD
       "severity": "warning"
     },
     "component-class-suffix": true,
@@ -21,6 +28,10 @@
       "app",
       "kebab-case"
     ],
+=======
+      "severity": "warn"
+    },
+>>>>>>> Clock
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -60,6 +71,10 @@
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
+<<<<<<< HEAD
+=======
+    "no-use-before-declare": true,
+>>>>>>> Clock
     "no-var-requires": false,
     "object-literal-key-quotes": [
       true,
@@ -72,6 +87,7 @@
       "single"
     ],
     "trailing-comma": false,
+<<<<<<< HEAD
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -89,3 +105,17 @@
     "codelyzer"
   ]
 }
+=======
+    "no-output-on-prefix": true,
+    "no-inputs-metadata-property": true,
+    "no-outputs-metadata-property": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true
+  }
+}
+>>>>>>> Clock

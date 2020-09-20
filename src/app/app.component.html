@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -536,3 +537,24 @@
 
 
 <router-outlet></router-outlet>
+=======
+<div class="container-fluid mt-4">
+
+    <div class="row">
+        <div class="col-8">
+            <h3>Application</h3>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-danger" *ngIf="authentication.isUserAuthenticated"
+                (click)="authentication.logout()">Logout</button>
+        </div>
+    </div>
+    
+    <hr />
+
+    <!-- <login (status)="status($event)"></login> -->
+
+    <router-outlet></router-outlet>
+
+</div>
+>>>>>>> Clock

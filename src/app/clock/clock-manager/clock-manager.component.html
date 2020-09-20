@@ -1,0 +1,11 @@
+<div class="row">
+
+  <div class="col-3" *ngFor="let clock of clocks">
+
+    <analog-clock [hour]="clock.hour" [minute]="clock.minute" [timezone]="clock.timezone">
+    </analog-clock>
+
+  </div>
+
+
+</div>

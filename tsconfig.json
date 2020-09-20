@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+<<<<<<< HEAD
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -9,6 +10,16 @@
     "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
+=======
+    "downlevelIteration": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+>>>>>>> Clock
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": [
@@ -18,9 +29,12 @@
       "es2018",
       "dom"
     ]
+<<<<<<< HEAD
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
+=======
+>>>>>>> Clock
   }
 }

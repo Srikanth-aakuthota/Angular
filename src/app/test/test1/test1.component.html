@@ -1,0 +1,53 @@
+<div class="row">
+
+  <div class="col-12" *ngIf="testService.singleOptionQuestions === null">
+    <img src="/assets/loading.gif" style="width: 300px" />
+  </div>
+
+  <div class="col-12 mb-5" *ngFor="let question of testService.singleOptionQuestions;let qi = index;">
+
+    <div class="card border-primary">
+
+      <div class="card-header bg-primary text-white">
+        {{question.statement}}
+      </div>
+
+      <div class="card-body">
+        <label>
+          <input type="radio" name="{{qi}}" [(ngModel)]="question.userOption" [value]="1"/>
+          {{question.option1}}
+        </label>
+      </div>
+
+      <div class="card-body">
+        <label>
+          <input type="radio" name="{{qi}}" [(ngModel)]="question.userOption"  [value]="2"/>
+          {{question.option2}}
+        </label>
+      </div>
+
+      <div class="card-body">
+        <label>
+          <input type="radio" name="{{qi}}" [(ngModel)]="question.userOption"  [value]="3"/>
+          {{question.option3}}
+        </label>
+      </div>
+
+      <div class="card-body">
+        <label>
+          <input type="radio" name="{{qi}}" [(ngModel)]="question.userOption"  [value]="4"/>
+          {{question.option4}}
+        </label>
+      </div>
+
+      <div class="card-footer">
+        <h4>
+          Marks: {{question.marks}}
+        </h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
