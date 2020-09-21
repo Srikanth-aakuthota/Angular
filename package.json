@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "angular",
-=======
   "name": "app1",
->>>>>>> Clock
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,14 +19,9 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-<<<<<<< HEAD
-    "rxjs": "~6.4.0",
-    "tslib": "^1.10.0",
-=======
     "core-js": "^2.5.4",
     "rxjs": "~6.5.3",
     "tslib": "^1.9.0",
->>>>>>> Clock
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -38,22 +29,6 @@
     "@angular/cli": "~8.3.20",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
-<<<<<<< HEAD
-    "@types/node": "~8.9.4",
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.0.0",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.0",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-=======
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -68,7 +43,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
->>>>>>> Clock
     "typescript": "~3.5.3"
   }
 }

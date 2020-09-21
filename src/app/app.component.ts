@@ -1,23 +1,14 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-
-@Component({
-  selector: 'app-root',
-=======
 import { Router } from '@angular/router';
 import { AuthenticationService } from './authentication.service';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app',
->>>>>>> Clock
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
-  title = 'Angular';
-=======
 
   private subscription1 : Subscription ;
   private subscription2 : Subscription ;
@@ -43,5 +34,4 @@ export class AppComponent {
     this.router.navigateByUrl("bookings") ;
   }
 
->>>>>>> Clock
 }

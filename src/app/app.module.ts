@@ -1,20 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-<<<<<<< HEAD
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-=======
 import { AppComponent } from './app.component';
 
 import { routes, AuthGuard } from "./routes";
@@ -45,7 +31,6 @@ import { DemoModule } from './demo/demo.module';
     ReactiveFormsModule // FormBuilder, FormGroup, FormControl, Validators
   ],
   providers: [AuthGuard],
->>>>>>> Clock
   bootstrap: [AppComponent]
 })
 export class AppModule { }
